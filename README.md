@@ -1,0 +1,2 @@
+## This app, created with FastAPI, resembles another spring boot app which shares the same name with this one and can be found in my profile.
+### technologies used: fastapi, sqlmodel, python-multipart, python-jose, pydantic, passlib, uvicorn, sqlite
