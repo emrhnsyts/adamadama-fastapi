@@ -17,7 +17,7 @@ router = APIRouter(
 
 
 @router.get('/')
-def get_sessions(db: db_dep, limit: Annotated[int, Query(ge=10, le=10)] = 10, offset=0):
+def get_sessions(db: db_dep, limit: Annotated[int, Query(ge=10, le=10)] = 10, offset:int=0):
     sessions = db.exec(select(Session).limit(limit).offset(offset)).all()
     return [SessionResponse(
         owner=session.owner.username,
