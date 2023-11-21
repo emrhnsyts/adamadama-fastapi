@@ -4,6 +4,8 @@ from fastapi import APIRouter, HTTPException, Query
 from sqlmodel import select
 from starlette import status
 from datetime import datetime
+from base import CityEnum
+
 
 from dependencies import user_dependency, db_dep
 from models import Session
